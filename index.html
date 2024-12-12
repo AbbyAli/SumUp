@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Notes Summarizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #summary {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="Sum.png" alt="Description of image" class="fixed-size">
+    <p>Summarize key points from your notes with a single click!</p>
+    <textarea id="notes" placeholder="Enter your notes here..."></textarea>
+    <button onclick="summarize()">Summarize</button>
+    <button onclick="clearNotes()">Clear</button>
+    <div id="summary">Your summary will appear here.</div>
+
+
+
+    <!-- Link to JavaScript -->
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</body>
+
+</html>
